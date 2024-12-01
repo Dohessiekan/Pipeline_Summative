@@ -35,19 +35,24 @@ The project is organized as follows:
 
 FraudCardDetection/
 ├── data/
+
 │   ├── fraudTest.csv
 │   └── fraudTrain.csv
+
 │
 ├── notebooks/
 │   └── FraudCardDetection.ipynb
+
 │
 ├── src/
 │   ├── data_preprocessing.py
 │   ├── model_training.py
 │   ├── model_evaluation.py
 │   └── make_predictions.py
+
 │
 ├── README.md
+
 ├── requirements.txt
 └── models/
     ├── fraud_detection_model.pkl
@@ -62,6 +67,7 @@ To set up the project, follow these steps:
 Clone the repository:
 
 git clone https://github.com/yourusername/FraudCardDetection.git
+
 cd FraudCardDetection
 
 Create a virtual environment and activate it:
