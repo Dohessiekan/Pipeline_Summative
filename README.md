@@ -33,8 +33,6 @@ is_fraud: Target class (1 = fraudulent, 0 = non-fraudulent)
 Project Structure
 The project is organized as follows:
 
-css
-Copy code
 FraudCardDetection/
 ├── data/
 │   ├── fraudTest.csv
@@ -54,6 +52,9 @@ FraudCardDetection/
 └── models/
     ├── fraud_detection_model.pkl
     └── fraud_detection_model.tf
+
+
+    
 Installation
 
 To set up the project, follow these steps:
