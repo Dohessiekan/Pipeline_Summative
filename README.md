@@ -101,3 +101,10 @@ The project uses the following technologies:
 Backend: Python, FastAPI, JavaScript
 Machine Learning: scikit-learn, TensorFlow
 Visualization: Matplotlib, Seaborn
+
+
+Video Link:
+https://youtu.be/ukpv5J3vKTY
+
+Project live:
+https://pipeline-frontend-summative-4.onrender.com
