@@ -106,5 +106,8 @@ Visualization: Matplotlib, Seaborn
 Video Link:
 https://youtu.be/ukpv5J3vKTY
 
-Project live:
+Project live: Delpoyement package:
 https://pipeline-frontend-summative-4.onrender.com
+
+Docker image: http://localhost:5000/
+public url for API: https://pipeline-summative.onrender.com
