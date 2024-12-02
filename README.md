@@ -67,7 +67,7 @@ To set up the project, follow these steps:
 
 Clone the repository:
 
-git clone https://github.com/yourusername/FraudCardDetection.git
+git clone https://github.com/Dohessiekan/Pipeline_Summative.git
 
 cd FraudCardDetection
 
