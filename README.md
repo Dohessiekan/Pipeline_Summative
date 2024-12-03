@@ -1,6 +1,7 @@
 # Pipeline_Summative
 
 FraudCardDetection
+
 Overview
 FraudCardDetection is a machine learning project aimed at detecting fraudulent credit card transactions. The project uses a dataset containing various transaction attributes to classify whether a transaction is fraudulent or not. The goal is to build a reliable model that can predict potential fraud in real-time.
 
@@ -8,28 +9,51 @@ Dataset
 The project uses the Credit Card Fraud Detection dataset, which includes the following attributes:
 
 index: Index of the record
+
 trans_date_trans_time: Date and time of the transaction
+
 cc_num: Credit card number
+
 merchant: Merchant where the transaction occurred
+
 category: Category of the transaction
+
 amt: Transaction amount
+
 first: First name of the cardholder
+
 last: Last name of the cardholder
+
 gender: Gender of the cardholder
+
 street: Street address of the cardholder
+
 city: City where the cardholder resides
+
 state: State where the cardholder resides
+
 zip: Postal code of the cardholder
+
 lat: Latitude of the merchant location
+
 long: Longitude of the merchant location
+
 city_pop: Population of the city where the cardholder resides
+
 job: Cardholder's job
+
 dob: Date of birth of the cardholder
+
 trans_num: Unique transaction number
+
 unix_time: Unix timestamp of the transaction
+
 merch_lat: Latitude of the merchant's location
+
 merch_long: Longitude of the merchant's location
+
 is_fraud: Target class (1 = fraudulent, 0 = non-fraudulent)
+
 Project Structure
 The project is organized as follows:
 
@@ -80,13 +104,27 @@ pip install -r requirements.txt
  After that:
 just lunch the main.py for the API and you will have all the endpoint
 
+For the frontend just get the github link for the frontend:
+
+Clone it
+cd (gitHub code)
+
+actuvate the environnment: venv\Scripts\activate
+
+Install the required dependencies: pip install -r requirements.txt
+
+Lunch the app.py by doing: Python app.py
+by lunching in the same time the API then you can start doing your prediction on the frontend.
+
 
 Models
+
 This project uses the following models, which have been trained on the credit card fraud detection dataset:
 
 fraud_detection_model.pkl: A serialized model trained using a classification algorithm (Using vanilla model and RandonForest).
 
 Frontend
+
 The frontend is built with FastAPI and provides the following features:
 
 Data Loading: Load training and testing datasets.
@@ -96,11 +134,13 @@ Model Retraining: Retrain the model via an API endpoint.
 Predictions: Make predictions on new transaction data to detect fraud.
 
 Technologies
+
 The project uses the following technologies:
 
 Backend: Python, FastAPI, JavaScript
 Machine Learning: scikit-learn, TensorFlow
 Visualization: Matplotlib, Seaborn
+Frontend: Flask only
 
 
 Video Link:
