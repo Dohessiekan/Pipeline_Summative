@@ -28,18 +28,22 @@ prediction_instance = MakePredictions(model_dir=MODEL_DIR, scaler_dir="")
 
 # Add CORS middleware
 origins = [
+    "https://pipeline-frontend-summative.onrender.com",  # Frontend URL
+    "https://pipeline-summative-1.onrender.com",         # API URL
     "http://localhost:8000",
     "http://localhost",
     "http://localhost:8080",
-    "http://127.0.0.1:5000",  # Update this if needed
+    "http://127.0.0.1:5000",  # Local development
 ]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # Updated with Flask's origin if needed
+    allow_origins=origins,  # Updated with deployed origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # Define the input schema for prediction
 class PredictionInput(BaseModel):
