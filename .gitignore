@@ -1,0 +1,8 @@
+# Ignore Docker image tar file
+Docker-image/fraud-catcher.tar
+
+# Ignore training dataset in train folder
+data/train/X_train.csv
+
+# Ignore fraud test dataset in data folder
+data/fraudTest.csv
