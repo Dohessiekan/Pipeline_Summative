@@ -28,12 +28,11 @@ prediction_instance = MakePredictions(model_dir=MODEL_DIR, scaler_dir="")
 
 # Add CORS middleware
 origins = [
-    "https://pipeline-frontend-summative.onrender.com",  # Frontend URL
-    "https://pipeline-summative-1.onrender.com",         # API URL
     "http://localhost:8000",
     "http://localhost",
-    "http://localhost:8080",
     "http://127.0.0.1:5000",  # Local development
+    "https://pipeline-frontend-summative.onrender.com",  # Frontend URL
+    "https://pipeline-summative-1.onrender.com",         # API URL
 ]
 
 app.add_middleware(
