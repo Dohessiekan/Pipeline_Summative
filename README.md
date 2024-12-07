@@ -147,6 +147,6 @@ Video Link:
 https://youtu.be/ukpv5J3vKTY
 
 Project live: Delpoyement package:
-https://pipeline-frontend-summative-4.onrender.com
+https://pipeline-frontend-summative.onrender.com
 
 public url for API: https://pipeline-summative.onrender.com
