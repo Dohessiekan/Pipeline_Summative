@@ -27,16 +27,9 @@ model_instance = FraudDetectionModel(DATA_DIR, MODEL_DIR)
 prediction_instance = MakePredictions(model_dir=MODEL_DIR, scaler_dir="")
 
 # Add CORS middleware
-origins = [
-    "http://localhost:8000",
-    "http://localhost",
-    "http://127.0.0.1:5000",  # Local development
-    "https://pipeline-frontend-summative.onrender.com",  # Frontend URL
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # Updated with deployed origins
+    allow_origins=["https://pipeline-frontend-summative.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
