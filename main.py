@@ -32,13 +32,13 @@ origins = [
     "http://localhost",
     "http://127.0.0.1:5000",  # Local development
     "https://pipeline-frontend-summative.onrender.com",  # Frontend URL
-    "https://pipeline-summative-1.onrender.com",         # API URL
+    "https://pipeline-summative-3.onrender.com/docs",         # API URL
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,  # Updated with deployed origins
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
